@@ -23,11 +23,11 @@
 	<key>createdby</key>
 	<string>Ryan Verhey</string>
 	<key>description</key>
-	<string>Open reddit or subreddit</string>
+	<string>Opens subreddits</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open reddit</string>
+	<string>Open Subreddit</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -63,7 +63,7 @@
 				<key>subtext</key>
 				<string>Type in name of subreddit to go there</string>
 				<key>title</key>
-				<string>Open reddit or subreddit</string>
+				<string>Open subreddit</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
