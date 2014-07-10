@@ -1,6 +1,12 @@
 "Open Subreddit" Alfred Workflow
 ================================
 
+###Description
+
+This Alfred workflow searches Reddit for the subreddit you type in.
+
+==============
+
 ###Install
 
 Just download the .alfredworkflow file linked below and open it with Alfred.
