@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>F27FDD3C-4272-42BC-ACDC-F40E4136E854</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4982F1AD-892F-48B0-A49E-6CC7E84C3017</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Ryan Verhey</string>
+	<key>description</key>
+	<string>Open reddit or subreddit</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open reddit</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>4982F1AD-892F-48B0-A49E-6CC7E84C3017</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>reddit</string>
+				<key>runningsubtext</key>
+				<string>Searching reddit...</string>
+				<key>script</key>
+				<string>ruby ./filter.rb {query}</string>
+				<key>subtext</key>
+				<string>Type in name of subreddit to go there</string>
+				<key>title</key>
+				<string>Open reddit or subreddit</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F27FDD3C-4272-42BC-ACDC-F40E4136E854</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>4982F1AD-892F-48B0-A49E-6CC7E84C3017</key>
+		<dict>
+			<key>ypos</key>
+			<real>140</real>
+		</dict>
+		<key>F27FDD3C-4272-42BC-ACDC-F40E4136E854</key>
+		<dict>
+			<key>ypos</key>
+			<real>140</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
