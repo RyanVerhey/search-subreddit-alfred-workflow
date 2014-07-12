@@ -59,7 +59,7 @@
 				<key>runningsubtext</key>
 				<string>Searching reddit...</string>
 				<key>script</key>
-				<string>ruby ./filter.rb {query}</string>
+				<string>ruby ./search.rb {query}</string>
 				<key>subtext</key>
 				<string>Type in name of subreddit to go there</string>
 				<key>title</key>
