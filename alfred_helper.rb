@@ -30,7 +30,7 @@ module Alfred
 
     def initialize(attributes = {})
       attributes.each do |key, value|
-        self.send("#{key}=", attributes.fetch(value,nil)) if @@properties.member? key
+        self.send("#{key}=", attributes.fetch(key,nil)) if @@properties.member? key
       end
     end
 
