@@ -3,7 +3,7 @@ require 'uri'
 require 'json'
 require_relative 'alfred_helper'
 
-query = ARGV.first
+query = ARGV.first.strip
 
 query_url = URI.parse("http://www.reddit.com/subreddits/search.json?q=" + query)
 default_url = "http://www.reddit.com"
@@ -14,14 +14,7 @@ subs = resp["data"]["children"]
 
 xml = Alfred::Workflow.new
 
-if query == "reddit"
-  reddit = Alfred::Item.new({
-    arg: default_url,
-    autocomplete: 'Reddit',
-    title: 'Reddit homepage',
-    subtitle: default_url })
-  xml << reddit
-elsif subs.first == nil
+if subs.first == nil
   invalid = Alfred::Item.new({
     valid: "no",
     title: "No results yet. Keep Typing...",

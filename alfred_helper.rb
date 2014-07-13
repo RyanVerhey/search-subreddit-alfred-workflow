@@ -23,7 +23,7 @@ module Alfred
   end
 
   class Item
-    @@properties = [:title, :subtitle, :arg, :uid, :icon, :autocomplete, :valid, :type]
+    @@properties = [:title, :subtitle, :arg, :uid, :icon, :icon_type, :autocomplete, :valid, :type]
     @@properties.each do |prop|
       attr_accessor prop
     end
@@ -42,7 +42,7 @@ module Alfred
       xml += ">"
       xml += "<title>#{self.title}</title>" if self.title
       xml += "<subtitle>#{self.subtitle}</subtitle>" if self.subtitle
-      xml += "<icon>#{self.icon}</icon>" if self.icon
+      xml += "<icon#{(" type='" + self.icon_type + "'") if self.icon_type}>#{self.icon}</icon>" if self.icon
       xml += "</item>"
     end
   end

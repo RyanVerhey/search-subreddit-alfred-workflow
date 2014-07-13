@@ -8,8 +8,54 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>831726AB-45BF-4FB1-BBED-BF8B36887C94</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C725FCDC-BB22-4FC4-897E-94580BBFD812</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B05E6065-721D-40BE-AF43-A7A43D8FD29A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy post link to clipboard</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>91458763-2A33-440C-A9CD-0A58B8829AB8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>F27FDD3C-4272-42BC-ACDC-F40E4136E854</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A16F5635-4B59-4EC7-A11C-1C6B19001082</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy subreddit link to clipboard</string>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>4982F1AD-892F-48B0-A49E-6CC7E84C3017</string>
@@ -18,18 +64,108 @@
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>551AA438-FD6E-42CD-A93B-70EA999B7598</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Ryan Verhey</string>
 	<key>description</key>
-	<string>Opens subreddits</string>
+	<string>Searches Reddit</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open Subreddit</string>
+	<string>Search Reddit</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>reddit</string>
+				<key>subtext</key>
+				<string>Opens Reddit homepage</string>
+				<key>text</key>
+				<string>Open Reddit</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>831726AB-45BF-4FB1-BBED-BF8B36887C94</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://www.reddit.com</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>C725FCDC-BB22-4FC4-897E-94580BBFD812</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>reddit subs</string>
+				<key>runningsubtext</key>
+				<string>Searching subreddits...</string>
+				<key>script</key>
+				<string>ruby ./search_subs.rb {query}</string>
+				<key>subtext</key>
+				<string>Type in name of a subreddit</string>
+				<key>title</key>
+				<string>Search subreddits</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F27FDD3C-4272-42BC-ACDC-F40E4136E854</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A16F5635-4B59-4EC7-A11C-1C6B19001082</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -50,20 +186,45 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Copied {query} to clipboard</string>
+				<key>title</key>
+				<string>Search Subreddits</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>551AA438-FD6E-42CD-A93B-70EA999B7598</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>reddit</string>
+				<string>reddit user</string>
 				<key>runningsubtext</key>
-				<string>Searching reddit...</string>
+				<string>Searching users...</string>
 				<key>script</key>
-				<string>ruby ./search.rb {query}</string>
+				<string>ruby ./search_users.rb {query}</string>
 				<key>subtext</key>
-				<string>Type in name of subreddit to go there</string>
+				<string>Type in username (limited to 25 posts)</string>
 				<key>title</key>
-				<string>Open subreddit</string>
+				<string>Search submissions by user</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -72,7 +233,64 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>F27FDD3C-4272-42BC-ACDC-F40E4136E854</string>
+			<string>B05E6065-721D-40BE-AF43-A7A43D8FD29A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>91458763-2A33-440C-A9CD-0A58B8829AB8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Copied {query} to clipboard</string>
+				<key>title</key>
+				<string>Search User Submissions</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -84,12 +302,52 @@
 		<key>4982F1AD-892F-48B0-A49E-6CC7E84C3017</key>
 		<dict>
 			<key>ypos</key>
-			<real>140</real>
+			<real>180</real>
+		</dict>
+		<key>551AA438-FD6E-42CD-A93B-70EA999B7598</key>
+		<dict>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</key>
+		<dict>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>831726AB-45BF-4FB1-BBED-BF8B36887C94</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>91458763-2A33-440C-A9CD-0A58B8829AB8</key>
+		<dict>
+			<key>ypos</key>
+			<real>400</real>
+		</dict>
+		<key>A16F5635-4B59-4EC7-A11C-1C6B19001082</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>B05E6065-721D-40BE-AF43-A7A43D8FD29A</key>
+		<dict>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>C725FCDC-BB22-4FC4-897E-94580BBFD812</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</key>
+		<dict>
+			<key>ypos</key>
+			<real>340</real>
 		</dict>
 		<key>F27FDD3C-4272-42BC-ACDC-F40E4136E854</key>
 		<dict>
 			<key>ypos</key>
-			<real>140</real>
+			<real>120</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
