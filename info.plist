@@ -19,6 +19,33 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>B05E6065-721D-40BE-AF43-A7A43D8FD29A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy post link to clipboard</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>91458763-2A33-440C-A9CD-0A58B8829AB8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>F27FDD3C-4272-42BC-ACDC-F40E4136E854</key>
 		<array>
 			<dict>
@@ -210,6 +237,63 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>91458763-2A33-440C-A9CD-0A58B8829AB8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Copied {query} to clipboard</string>
+				<key>title</key>
+				<string>Search User Submissions</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -218,17 +302,27 @@
 		<key>4982F1AD-892F-48B0-A49E-6CC7E84C3017</key>
 		<dict>
 			<key>ypos</key>
-			<real>190</real>
+			<real>180</real>
 		</dict>
 		<key>551AA438-FD6E-42CD-A93B-70EA999B7598</key>
 		<dict>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
+		<key>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</key>
+		<dict>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
 		<key>831726AB-45BF-4FB1-BBED-BF8B36887C94</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>91458763-2A33-440C-A9CD-0A58B8829AB8</key>
+		<dict>
+			<key>ypos</key>
+			<real>400</real>
 		</dict>
 		<key>A16F5635-4B59-4EC7-A11C-1C6B19001082</key>
 		<dict>
@@ -238,12 +332,17 @@
 		<key>B05E6065-721D-40BE-AF43-A7A43D8FD29A</key>
 		<dict>
 			<key>ypos</key>
-			<real>320</real>
+			<real>340</real>
 		</dict>
 		<key>C725FCDC-BB22-4FC4-897E-94580BBFD812</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</key>
+		<dict>
+			<key>ypos</key>
+			<real>340</real>
 		</dict>
 		<key>F27FDD3C-4272-42BC-ACDC-F40E4136E854</key>
 		<dict>
