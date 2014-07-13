@@ -8,6 +8,10 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>4982F1AD-892F-48B0-A49E-6CC7E84C3017</key>
+		<array/>
+		<key>67D12D58-1BC2-4536-8B29-E2E41D149963</key>
+		<array/>
 		<key>831726AB-45BF-4FB1-BBED-BF8B36887C94</key>
 		<array>
 			<dict>
@@ -19,6 +23,35 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>847EF0E5-5307-403D-AB97-FC7F9B79FB99</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB582313-387F-4B0F-9DA7-9EE411316006</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy link to clipboard</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C7BEE45D-6377-4B95-900B-33D93ED308FA</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>67D12D58-1BC2-4536-8B29-E2E41D149963</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>91458763-2A33-440C-A9CD-0A58B8829AB8</key>
+		<array/>
 		<key>B05E6065-721D-40BE-AF43-A7A43D8FD29A</key>
 		<array>
 			<dict>
@@ -211,6 +244,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -240,15 +288,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Copied {query} to clipboard</string>
+				<key>title</key>
+				<string>Search User Submissions</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</string>
+			<string>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -272,6 +330,67 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>EB582313-387F-4B0F-9DA7-9EE411316006</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>reddit search</string>
+				<key>runningsubtext</key>
+				<string>Searching Reddit...</string>
+				<key>script</key>
+				<string>ruby ./general_search.rb {query}</string>
+				<key>subtext</key>
+				<string>Search for anything and everything on Reddit (limit of 25 results)</string>
+				<key>title</key>
+				<string>General Reddit Search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>847EF0E5-5307-403D-AB97-FC7F9B79FB99</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>67D12D58-1BC2-4536-8B29-E2E41D149963</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -285,12 +404,12 @@
 				<key>text</key>
 				<string>Copied {query} to clipboard</string>
 				<key>title</key>
-				<string>Search User Submissions</string>
+				<string>Reddit Search</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</string>
+			<string>C7BEE45D-6377-4B95-900B-33D93ED308FA</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -302,27 +421,37 @@
 		<key>4982F1AD-892F-48B0-A49E-6CC7E84C3017</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>230</real>
 		</dict>
 		<key>551AA438-FD6E-42CD-A93B-70EA999B7598</key>
 		<dict>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
+		<key>67D12D58-1BC2-4536-8B29-E2E41D149963</key>
+		<dict>
+			<key>ypos</key>
+			<real>670</real>
+		</dict>
 		<key>6AA67EF4-F111-4D9F-91B1-56CF9594AF71</key>
 		<dict>
 			<key>ypos</key>
-			<real>460</real>
+			<real>450</real>
 		</dict>
 		<key>831726AB-45BF-4FB1-BBED-BF8B36887C94</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>847EF0E5-5307-403D-AB97-FC7F9B79FB99</key>
+		<dict>
+			<key>ypos</key>
+			<real>560</real>
+		</dict>
 		<key>91458763-2A33-440C-A9CD-0A58B8829AB8</key>
 		<dict>
 			<key>ypos</key>
-			<real>400</real>
+			<real>450</real>
 		</dict>
 		<key>A16F5635-4B59-4EC7-A11C-1C6B19001082</key>
 		<dict>
@@ -339,10 +468,20 @@
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>C7BEE45D-6377-4B95-900B-33D93ED308FA</key>
+		<dict>
+			<key>ypos</key>
+			<real>670</real>
+		</dict>
 		<key>CBB4EB00-4B51-46F1-A1B7-CB9996C759A2</key>
 		<dict>
 			<key>ypos</key>
 			<real>340</real>
+		</dict>
+		<key>EB582313-387F-4B0F-9DA7-9EE411316006</key>
+		<dict>
+			<key>ypos</key>
+			<real>560</real>
 		</dict>
 		<key>F27FDD3C-4272-42BC-ACDC-F40E4136E854</key>
 		<dict>
