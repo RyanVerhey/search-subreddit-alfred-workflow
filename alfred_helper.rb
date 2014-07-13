@@ -42,8 +42,7 @@ module Alfred
       xml += ">"
       xml += "<title>#{self.title}</title>" if self.title
       xml += "<subtitle>#{self.subtitle}</subtitle>" if self.subtitle
-      xml += "<icon#{(" type=" + self.icon_type) if self.icon_type}"
-      xml += ">#{self.icon}</icon>" if self.icon
+      xml += "<icon#{(" type='" + self.icon_type + "'") if self.icon_type}>#{self.icon}</icon>" if self.icon
       xml += "</item>"
     end
   end
