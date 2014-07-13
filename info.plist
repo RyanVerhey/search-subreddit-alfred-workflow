@@ -55,11 +55,11 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>reddit sub</string>
+				<string>reddit subs</string>
 				<key>runningsubtext</key>
-				<string>Searching reddit...</string>
+				<string>Searching subreddits...</string>
 				<key>script</key>
-				<string>ruby ./search.rb {query}</string>
+				<string>ruby ./search_subs.rb {query}</string>
 				<key>subtext</key>
 				<string>Type in name of a subreddit</string>
 				<key>title</key>
