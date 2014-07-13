@@ -23,11 +23,11 @@
 	<key>createdby</key>
 	<string>Ryan Verhey</string>
 	<key>description</key>
-	<string>Opens subreddits</string>
+	<string>Searches Reddit</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open Subreddit</string>
+	<string>Search Reddit</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -55,15 +55,15 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>reddit</string>
+				<string>reddit sub</string>
 				<key>runningsubtext</key>
 				<string>Searching reddit...</string>
 				<key>script</key>
 				<string>ruby ./search.rb {query}</string>
 				<key>subtext</key>
-				<string>Type in name of subreddit to go there</string>
+				<string>Type in name of a subreddit</string>
 				<key>title</key>
-				<string>Open subreddit</string>
+				<string>Search subreddits</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
