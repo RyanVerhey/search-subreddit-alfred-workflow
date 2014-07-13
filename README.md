@@ -1,4 +1,4 @@
-"Open Subreddit" Alfred Workflow
+"Search Reddit" Alfred Workflow
 ================================
 
 ###Description
