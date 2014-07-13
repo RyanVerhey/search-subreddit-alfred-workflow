@@ -13,7 +13,7 @@ Don't know what Alfred is? Check it out [here](http://www.alfredapp.com/).
 
 Just download the .alfredworkflow file linked below and open it with Alfred.
 
-__[DOWNLOAD](http://ryanverhey.com/files/alfred/open-subreddit.alfredworkflow)__
+__[DOWNLOAD](http://ryanverhey.com/files/alfred/search-reddit.alfredworkflow)__
 
 ==============
 
