@@ -3,7 +3,7 @@ require 'uri'
 require 'json'
 require_relative 'alfred_helper'
 
-query = ARGV.first
+query = ARGV.first.strip
 
 query_url = URI.parse("http://www.reddit.com/subreddits/search.json?q=" + query)
 default_url = "http://www.reddit.com"
