@@ -14,14 +14,7 @@ subs = resp["data"]["children"]
 
 xml = Alfred::Workflow.new
 
-if query == "reddit"
-  reddit = Alfred::Item.new({
-    arg: default_url,
-    autocomplete: 'Reddit',
-    title: 'Reddit homepage',
-    subtitle: default_url })
-  xml << reddit
-elsif subs.first == nil
+if subs.first == nil
   invalid = Alfred::Item.new({
     valid: "no",
     title: "No results yet. Keep Typing...",
