@@ -1,7 +1,7 @@
 "Search Reddit" Alfred Workflow
 ================================
 
-###Description
+### Description
 
 This Alfred workflow searches Reddit for subreddits, user submissions, or anything else. Also opens the Reddit homepage.
 
@@ -9,15 +9,15 @@ Don't know what Alfred is? Check it out [here](http://www.alfredapp.com/).
 
 ==============
 
-###Install
+### Install
 
 Just download the .alfredworkflow file linked below and open it with Alfred.
 
-__[DOWNLOAD](http://ryanverhey.com/files/alfred/search-reddit.alfredworkflow)__
+__[DOWNLOAD](https://files.ryanverhey.dev/files/alfred/search-reddit.alfredworkflow)__
 
 ==============
 
-###Use
+### Use
 
 You can do a few things with this workflow. The most basic is just opening the Reddit homepage by typing in `reddit`:
 
